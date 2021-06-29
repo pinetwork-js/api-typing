@@ -1,15 +1,15 @@
 {
   "name": "@pinetwork-js/api-typing",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Typing for the Pi Network SDK API",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "prepack": "yarn build",
-		"build": "rimraf build && tsc",
-		"lint": "eslint src --ext ts",
-		"lint-fix": "yarn lint --fix",
-		"format": "prettier . --write"
+    "build": "rimraf build && tsc",
+    "lint": "eslint src --ext ts",
+    "lint-fix": "yarn lint --fix",
+    "format": "prettier . --write"
   },
   "repository": {
     "type": "git",
