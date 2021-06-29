@@ -1,0 +1,38 @@
+{
+  "name": "@pinetwork-js/api-typing",
+  "version": "1.0.0",
+  "description": "Typing for the Pi Network SDK API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiNetwork-js/api-typing.git"
+  },
+  "author": "Brewal Derouet <brewal_derouet@hotmail.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PiNetwork-js/api-typing/issues"
+  },
+  "homepage": "https://github.com/PiNetwork-js/api-typing#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.3.4"
+  },
+  "files": [
+		"build"
+	],
+	"keywords": [
+		"pi",
+		"Pi Network",
+		"api",
+		"minepi",
+    "typing"
+	]
+}
