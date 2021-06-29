@@ -2,7 +2,8 @@
   "name": "@pinetwork-js/api-typing",
   "version": "1.0.0",
   "description": "Typing for the Pi Network SDK API",
-  "main": "index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "prepack": "yarn build",
 		"build": "rimraf build && tsc",
