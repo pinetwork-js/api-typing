@@ -4,7 +4,11 @@
   "description": "Typing for the Pi Network SDK API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepack": "yarn build",
+		"build": "rimraf build && tsc",
+		"lint": "eslint src --ext ts",
+		"lint-fix": "yarn lint --fix",
+		"format": "prettier . --write"
   },
   "repository": {
     "type": "git",
