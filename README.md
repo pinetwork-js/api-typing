@@ -16,15 +16,28 @@ yarn add @pinetwork-js/api-typing -D
 
 ### Usage
 
-To use the page on your code:
+To use the package on your code, you can import everything or just what you want:
 
 ```js
 const api = require('@pinetwork-js/api-typing');
+const { APIPayment } = require('@pinetwork-js/api-typing');
 ```
 
 ```ts
 // TypeScript or ESM support
 import api from '@pinetwork-js/api-typing';
+import { APIPayment } from '@pinetwork-js/api-typing';
+```
+
+The package is divided into three parts: `payloads`, `rest` and `routes`. If you just want to import all the types of a certain part:
+
+```js
+const { routes } = require('@pinetwork-js/api-typing');
+```
+
+```ts
+// TypeScript or ESM support
+import { routes } from '@pinetwork-js/api-typing';
 ```
 
 ## Project Structure
@@ -40,3 +53,5 @@ The export is split into two main parts:
     - For example, `RESTPostCompletePaymentJSONBody` or `RESTPostCompletePaymentResult`.
 
   - If a type ends with `Result`, then it represents the expected result by calling its accompanying route.
+
+- Anything else that is miscellaneous will be exported based on what it represents (for example the `routes` part)
