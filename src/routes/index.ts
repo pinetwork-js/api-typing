@@ -1,2 +1,2 @@
 export * from './routify';
-export * from './routes';
+export * from './v2';

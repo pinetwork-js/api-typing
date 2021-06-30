@@ -1,7 +1,7 @@
 export * from './payloads';
 export * as payloads from './payloads';
 
-export * from './rest';
+export * from './rest/v2';
 export * as rest from './rest';
 
 export * from './routes';
