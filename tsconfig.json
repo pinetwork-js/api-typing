@@ -5,8 +5,8 @@
 		"strict": true,
 		"target": "ESNext",
 		"lib": ["ESNext"],
-		"outDir": "build",
 		"declaration": true,
 		"module": "CommonJS"
-	}
+	},
+	"include": ["index.ts", "payloads/*ts", "rest/*ts", "routes/*ts"]
 }

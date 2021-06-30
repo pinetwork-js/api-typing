@@ -1,47 +1,53 @@
 {
-  "name": "@pinetwork-js/api-typing",
-  "version": "0.1.0",
-  "description": "Typing for the Pi Network SDK API",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "scripts": {
-    "prepack": "yarn build",
-    "build": "rimraf build && tsc",
-    "lint": "eslint src --ext ts",
-    "lint-fix": "yarn lint --fix",
-    "format": "prettier . --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PiNetwork-js/api-typing.git"
-  },
-  "author": "Brewal Derouet <brewal_derouet@hotmail.fr>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PiNetwork-js/api-typing/issues"
-  },
-  "homepage": "https://github.com/PiNetwork-js/api-typing#readme",
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.28.1",
-    "@typescript-eslint/parser": "^4.28.1",
-    "eslint": "^7.29.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-node": "^0.3.4",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "prettier": "^2.3.2",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.3.4"
-  },
-  "files": [
-    "build"
-  ],
-  "keywords": [
-    "pi",
-    "Pi Network",
-    "api",
-    "minepi",
-    "typing"
-  ]
+	"name": "@pinetwork-js/api-typing",
+	"version": "0.1.0",
+	"description": "Typing for the Pi Network SDK API",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"exports": {
+		"./payloads": "./payloads/index.js",
+		"./rest": "./rest/index.js",
+		"./routes": "./routes/index.js"
+	},
+	"scripts": {
+		"prepack": "yarn build",
+		"build": "rimraf {payloads,rest,routes}/*.{js,d.ts} index.{js,d.ts} && tsc",
+		"lint": "eslint src --ext ts",
+		"lint-fix": "yarn lint --fix",
+		"format": "prettier . --write"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/PiNetwork-js/api-typing.git"
+	},
+	"author": "Brewal Derouet <brewal_derouet@hotmail.fr>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/PiNetwork-js/api-typing/issues"
+	},
+	"homepage": "https://github.com/PiNetwork-js/api-typing#readme",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.28.1",
+		"@typescript-eslint/parser": "^4.28.1",
+		"eslint": "^7.29.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-node": "^0.3.4",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"prettier": "^2.3.2",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.3.4"
+	},
+	"files": [
+		"{payloads,rest,routes}/*.{js,d.ts}",
+		"index.{js,d.ts}"
+	],
+	"keywords": [
+		"pi",
+		"Pi Network",
+		"api",
+		"minepi",
+		"typing"
+	]
 }

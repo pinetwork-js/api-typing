@@ -38,4 +38,16 @@ pids
 
 # TypeScript
 *.tsbuildinfo
-build
+
+# Build outputs
+payloads/*.js
+payloads/*.d.ts
+
+rest/*.js
+rest/*.d.ts
+
+routes/*.js
+routes/*.d.ts
+
+index.js
+index.d.ts
