@@ -12,7 +12,7 @@
 	"scripts": {
 		"prepack": "yarn build",
 		"build": "rimraf {payloads,rest,routes}/*.{js,d.ts} index.{js,d.ts} && tsc",
-		"lint": "eslint src --ext ts",
+		"lint": "eslint {payloads,rest,routes}/*.ts index.ts --ext ts",
 		"lint-fix": "yarn lint --fix",
 		"format": "prettier . --write"
 	},
