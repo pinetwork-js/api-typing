@@ -1,4 +1,4 @@
-import { APIUser } from '../payloads';
+import { APIUser } from '../../payloads';
 
 /**
  * Undocumented route (GET /me)

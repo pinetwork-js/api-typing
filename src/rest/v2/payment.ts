@@ -1,4 +1,4 @@
-import { APIPartialPayment, APIPayment } from '../payloads';
+import { APIPartialPayment, APIPayment } from '../../payloads';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#get-a-payment

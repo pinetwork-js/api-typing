@@ -1,2 +1,1 @@
-export * from './payment';
-export * from './auth';
+export * from './v2';
