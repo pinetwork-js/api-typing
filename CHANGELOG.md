@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.1.0...v0.2.0) (2021-07-01)
+
+
+### Features
+
+* group export ([#12](https://www.github.com/PiNetwork-js/api-typing/issues/12)) ([45f7e6a](https://www.github.com/PiNetwork-js/api-typing/commit/45f7e6afe8e9102e4be189ff472d1337b1b2c1f9))
+* routes typing ([#10](https://www.github.com/PiNetwork-js/api-typing/issues/10)) ([2f8c1bf](https://www.github.com/PiNetwork-js/api-typing/commit/2f8c1bf00bae036c43cfbc6ddb25f3444826ab85))
+
 ## 0.1.0 (2021-06-30)
 
 
