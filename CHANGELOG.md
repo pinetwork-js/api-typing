@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.0...v0.2.1) (2021-07-12)
+
+
+### Bug Fixes
+
+* **routes:** change recent payment to incomplete payment ([#15](https://www.github.com/PiNetwork-js/api-typing/issues/15)) ([f449768](https://www.github.com/PiNetwork-js/api-typing/commit/f44976874daad4ff4b7514648d3edb86470acd7c))
+
 ## [0.2.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.1.0...v0.2.0) (2021-07-01)
 
 
