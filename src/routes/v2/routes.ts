@@ -12,7 +12,7 @@ export const createPayment = '/v2/payments' as Route<
 	api.RESTPostCreatePaymentResult,
 	api.RESTPostCreatePaymentJSONBody
 >;
-export const getRecentPayment = '/v2/payments/recent' as Route<api.RESTGetRecentPaymentResult>;
+export const getIncompletePayment = '/v2/payments/incomplete' as Route<api.RESTGetIncompletePaymentResult>;
 export const getPayment = routify<api.RESTGetPaymentResult, _, ['paymentId']>`/v2/payments/${'paymentId'}`;
 export const approvePayment = routify<
 	api.RESTPostApprovePaymentResult,

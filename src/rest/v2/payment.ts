@@ -51,16 +51,16 @@ export interface RESTPostCompletePaymentJSONBody {
 export type RESTPostCompletePaymentResult = APIPayment;
 
 /**
- * Undocumented route (GET /payments/recent)
+ * Undocumented route (GET /payments/incomplete)
  */
-export interface RESTGetRecentPaymentResult {
+export interface RESTGetIncompletePaymentResult {
 	/**
-	 * Whether or not there is a recent payment
+	 * Whether or not there is an incomplete payment
 	 */
 	exists: boolean;
 
 	/**
-	 * The recent payment if there is one
+	 * The incomplete payment if there is one
 	 */
 	payment: null | APIPayment;
 }
