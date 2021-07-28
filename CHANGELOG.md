@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.1...v0.2.2) (2021-07-28)
+
+
+### Documentation
+
+* update create payment documentation link ([a649270](https://www.github.com/PiNetwork-js/api-typing/commit/a64927082961ae6c0ea3c5569f13ab535c94d7aa))
+
 ### [0.2.1](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.0...v0.2.1) (2021-07-12)
 
 
