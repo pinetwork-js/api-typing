@@ -1,5 +1,18 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.1...v0.2.2) (2021-07-28)
+
+
+### Documentation
+
+* update create payment documentation link ([a649270](https://www.github.com/PiNetwork-js/api-typing/commit/a64927082961ae6c0ea3c5569f13ab535c94d7aa))
+
+
+### Miscellaneous Chores
+
+* update APIUserRoles type ([5a9fb80](https://www.github.com/PiNetwork-js/api-typing/commit/5a9fb8081a185f803e9ab273ef8965594f2eeddb))
+
+
 ### [0.2.1](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.0...v0.2.1) (2021-07-12)
 
 
