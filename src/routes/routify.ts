@@ -4,11 +4,10 @@ export type Route<R = void, P extends any = undefined> = string & { _: never };
 export type RoutePayload<E> = E extends Route<any, infer R> ? R : void;
 export type RouteResult<E> = E extends Route<infer R> ? R : undefined;
 
-export function routify<
-	R = void,
-	P extends any = undefined,
-	K extends readonly string[] = readonly string[],
->(literals: TemplateStringsArray, ...keys: K) {
+export function routify<R = void, P extends any = undefined, K extends readonly string[] = readonly string[]>(
+	literals: TemplateStringsArray,
+	...keys: K
+) {
 	return function (data: Record<K[number], string>): Route<R, P> {
 		let endpoint = literals[0];
 

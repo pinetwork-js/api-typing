@@ -8,5 +8,6 @@
 		"outDir": "build",
 		"declaration": true,
 		"module": "CommonJS"
-	}
+	},
+	"include": ["src/**/*.ts"]
 }
