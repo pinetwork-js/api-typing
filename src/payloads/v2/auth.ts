@@ -1,4 +1,4 @@
-const APIUserRoles = ['email_verified'] as const;
+type APIUserRoles = ('email_verified' | 'core_team' | 'moderator' | 'admin' | 'host')[];
 
 /**
  * Undocumented structure
@@ -17,5 +17,5 @@ export interface APIUser {
 	/**
 	 * The roles of the user
 	 */
-	roles: typeof APIUserRoles;
+	roles: APIUserRoles;
 }
