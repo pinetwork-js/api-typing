@@ -6,12 +6,12 @@ import { APIPartialPayment, APIPayment } from '../../payloads';
 export type RESTGetPaymentResult = APIPayment;
 
 /**
- * Undocumented route (POST /payments)
+ * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
  */
 export type RESTPostCreatePaymentJSONBody = APIPartialPayment;
 
 /**
- * Undocumented route (POST /payments)
+ * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
  */
 export type RESTPostCreatePaymentResult = APIPayment;
 
