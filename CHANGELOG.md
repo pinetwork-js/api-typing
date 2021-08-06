@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.3](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.2...v0.2.3) (2021-08-06)
+
+
+### Bug Fixes
+
+* remove slash at the beginning of routes ([aff8e32](https://www.github.com/PiNetwork-js/api-typing/commit/aff8e3286567de70174cad4e10fd6c887400b29f))
+
 ### [0.2.2](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.1...v0.2.2) (2021-07-28)
 
 
