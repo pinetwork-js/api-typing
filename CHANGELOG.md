@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.4](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.3...v0.2.4) (2021-08-12)
+
+
+### Bug Fixes
+
+* remove unused roles in APIUserRoles for auth ([aa6ff20](https://www.github.com/PiNetwork-js/api-typing/commit/aa6ff20d0141cc8b675c6760f2ebeb7f29c786f6))
+
 ### [0.2.3](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.2...v0.2.3) (2021-08-06)
 
 
