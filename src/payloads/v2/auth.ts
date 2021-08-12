@@ -1,4 +1,4 @@
-type APIUserRoles = ('email_verified' | 'core_team' | 'moderator' | 'admin' | 'host')[];
+type APIUserRoles = 'email_verified' | 'core_team' | 'mega_mod' | 'moderator';
 
 /**
  * Undocumented structure
@@ -17,5 +17,5 @@ export interface APIUser {
 	/**
 	 * The roles of the user
 	 */
-	roles: APIUserRoles;
+	roles: APIUserRoles[];
 }
