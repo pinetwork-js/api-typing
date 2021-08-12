@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.4...v0.3.0) (2021-08-12)
+
+
+### Features
+
+* new APIUser type with scope system ([0bfd2c0](https://www.github.com/PiNetwork-js/api-typing/commit/0bfd2c0da9c3c187ff2c11380cb1c4fc7b5d7c17))
+
 ### [0.2.4](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.3...v0.2.4) (2021-08-12)
 
 
