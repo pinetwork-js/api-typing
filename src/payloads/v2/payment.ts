@@ -50,7 +50,7 @@ export interface APIPayment extends APIPartialPayment {
 	/**
 	 * Blockchain transaction data, this is null if no transaction has been made yet
 	 */
-	transaction: null | APIPaymentTransaction;
+	transaction: APIPaymentTransaction | null;
 }
 
 /**

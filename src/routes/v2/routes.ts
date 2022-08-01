@@ -1,5 +1,6 @@
-import * as api from '../../rest/v2';
-import { Route, routify } from '../routify';
+import type * as api from '../../rest/v2';
+import type { Route } from '../routify';
+import { routify } from '../routify';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 type _ = undefined;

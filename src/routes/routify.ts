@@ -1,10 +1,10 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export type Route<R = void, P extends any = undefined> = string & { _: never };
+export type Route<R = void, P = undefined> = string & { _: never };
 
 export type RoutePayload<E> = E extends Route<any, infer R> ? R : void;
 export type RouteResult<E> = E extends Route<infer R> ? R : undefined;
 
-export function routify<R = void, P extends any = undefined, K extends readonly string[] = readonly string[]>(
+export function routify<R = void, P = undefined, K extends readonly string[] = readonly string[]>(
 	literals: TemplateStringsArray,
 	...keys: K
 ) {

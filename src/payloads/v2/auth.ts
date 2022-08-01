@@ -1,4 +1,4 @@
-type APIUserRoles = 'email_verified' | 'core_team' | 'mega_mod' | 'moderator';
+type APIUserRoles = 'core_team' | 'email_verified' | 'mega_mod' | 'moderator';
 
 /**
  * Undocumented structure

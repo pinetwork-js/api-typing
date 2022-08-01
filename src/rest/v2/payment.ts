@@ -1,4 +1,4 @@
-import { APIPartialPayment, APIPayment } from '../../payloads';
+import type { APIPartialPayment, APIPayment } from '../../payloads';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#get-a-payment
@@ -62,5 +62,5 @@ export interface RESTGetIncompletePaymentResult {
 	/**
 	 * The incomplete payment if there is one
 	 */
-	payment: null | APIPayment;
+	payment: APIPayment | null;
 }
