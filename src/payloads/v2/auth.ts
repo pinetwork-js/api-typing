@@ -1,5 +1,12 @@
-type APIUserRoles = 'core_team' | 'email_verified' | 'mega_mod' | 'moderator';
-type APIUserScopes = 'payments' | 'platform' | 'roles' | 'username';
+/**
+ * List of available roles
+ */
+export type APIUserRoles = 'core_team' | 'email_verified' | 'mega_mod' | 'moderator';
+
+/**
+ * List of available scopes
+ */
+export type APIUserScopes = 'payments' | 'platform' | 'roles' | 'username';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#userdto (not updated)
@@ -29,7 +36,7 @@ export interface APIUser {
 /**
  * Structure representing a user credentials from the Pi Platform API.
  */
-interface APIUserCredentials {
+export interface APIUserCredentials {
 	/**
 	 * The available scopes for the user.
 	 */
@@ -44,7 +51,7 @@ interface APIUserCredentials {
 /**
  * Structure representing a user credentials validation information from the Pi Platform API
  */
-interface APIUserCredentialsValidation {
+export interface APIUserCredentialsValidation {
 	/**
 	 * Timestamp of the scopes validity end date.
 	 */
