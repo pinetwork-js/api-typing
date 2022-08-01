@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.3.0...v0.4.0) (2022-08-01)
+
+
+### Features
+
+* add exports field in package.json ([d559dbd](https://www.github.com/PiNetwork-js/api-typing/commit/d559dbdc0fabf3f4b500f930e86d52c87670e826))
+* add usage tracking API info ([6d91f54](https://www.github.com/PiNetwork-js/api-typing/commit/6d91f541a2999822c62cfd572b47cfe4e0908ccd))
+* new APIUser structure ([c35f248](https://www.github.com/PiNetwork-js/api-typing/commit/c35f24862e6273866df57a7952242a1f2614c56f))
+
+
+### Bug Fixes
+
+* missing some exports ([1fdd8b7](https://www.github.com/PiNetwork-js/api-typing/commit/1fdd8b7877f7fd03cc26aa21fa2b48d14ab68bf5))
+
 ## [0.3.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.2.4...v0.3.0) (2021-08-12)
 
 
