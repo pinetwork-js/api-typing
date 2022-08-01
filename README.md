@@ -91,7 +91,7 @@ async function post<T extends Route<any, any>>(route: T, payload: RoutePayload<T
 
 The export is split into two main parts:
 
-- Everything exported with the `API` prefix represents a payload you may get from the REST API.
+- Everything exported with the `API` prefix represents a payload you may get from or post to the REST API.
 
 - Everything exported with the `REST` prefix represents data that only comes from or is directly related to the REST API.
 
