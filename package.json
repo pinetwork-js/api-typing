@@ -5,6 +5,15 @@
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"prettier": "@pinetwork-js/prettier-config",
+	"exports": {
+		".": "./build/index.js",
+		"./payloads": "./build/payloads/index.js",
+		"./payloads/v2": "./build/payloads/v2/index.js",
+		"./rest": "./build/rest/index.js",
+		"./rest/v2": "./build/rest/v2/index.js",
+		"./routes": "./build/routes/index.js",
+		"./routes/v2": "./build/routes/v2/index.js"
+	},
 	"scripts": {
 		"prepack": "yarn build",
 		"build": "rimraf build && tsc",

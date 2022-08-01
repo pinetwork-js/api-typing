@@ -33,11 +33,15 @@ The package is divided into three parts: `payloads`, `rest` and `routes`. If you
 
 ```js
 const { routes } = require('@pinetwork-js/api-typing');
+// or
+const routes = require('@pinetwork-js/api-typing/routes')
 ```
 
 ```ts
 // TypeScript or ESM support
 import { routes } from '@pinetwork-js/api-typing';
+// or
+import routes from '@pinetwork-js/api-typing/routes';
 ```
 
 ### Routes
@@ -53,12 +57,12 @@ Static routes are routes that doesn't change (you don't have to provide any info
 Dynamic routes are routes that need to be changed like `/payments/:payment_id` (you have to provide a payment id to get the information of that specific payment for example). The exported dynamic routes are functions who take an object as argument with the information it needs to create the final route. The result is a crafted string (the route) with the custom type `Route<R, P>` (like a static route). Here's an example:
 
 ```ts
-import { routes } from '@pinetwork-js/api-typing';
+import { getPayment } from '@pinetwork-js/api-typing/routes';
 
 // routes.getPayment represents the dynamic route for 'GET /payments/:payment_id'
 
-const getPaymentRoute = routes.getPayment({ paymentId: '1234' });
-console.log(getPaymentRoute); // '/v2/payments/1234'
+const getPaymentRoute = getPayment({ paymentId: '1234' });
+console.log(getPaymentRoute); // 'v2/payments/1234'
 
 type GetPaymentRoute = typeof getPaymentRoute; // Route<APIPayment, undefined>
 ```
@@ -68,7 +72,7 @@ type GetPaymentRoute = typeof getPaymentRoute; // Route<APIPayment, undefined>
 The package provide two generic types to help you for that: `RouteResult` and `RoutePayload`. `RouteResult` get the result's type of a route (the `R` in the type `Route<R, P>`) and `RoutePayload` get the payload's type (the `P`). Here's an example of (non-functional) code to show you how to type your request functions (based on my rewrite of the SDK that you can find [here](https://github.com/PiNetwork-js/sdk)):
 
 ```ts
-import { RoutePayload, RouteResult, Route } from '@pinetwork-js/api-typing';
+import { RoutePayload, RouteResult, Route } from '@pinetwork-js/api-typing/routes';
 
 async function get<T extends Route<any>>(route: T): Promise<RouteResult<T>> {
   const response = await myGetRequest(route);
