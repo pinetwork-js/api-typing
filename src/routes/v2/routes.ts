@@ -27,3 +27,6 @@ export const completePayment = routify<
 	api.RESTPostCompletePaymentJSONBody,
 	['paymentId']
 >`v2/payments/${'paymentId'}/complete`;
+
+// Usage
+export const trackUsage = 'v2/usage/track' as Route<_, api.RESTPostUsageTrackJSONBody>;
