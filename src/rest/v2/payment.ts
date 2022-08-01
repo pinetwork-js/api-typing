@@ -1,4 +1,4 @@
-import type { APIPartialPayment, APIPayment } from '../../payloads';
+import type { APIIncompletePayment, APIPartialPayment, APIPayment } from '../../payloads';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#get-a-payment
@@ -53,14 +53,4 @@ export type RESTPostCompletePaymentResult = APIPayment;
 /**
  * Undocumented route (GET /payments/incomplete)
  */
-export interface RESTGetIncompletePaymentResult {
-	/**
-	 * Whether or not there is an incomplete payment
-	 */
-	exists: boolean;
-
-	/**
-	 * The incomplete payment if there is one
-	 */
-	payment: APIPayment | null;
-}
+export type RESTGetIncompletePaymentResult = APIIncompletePayment;

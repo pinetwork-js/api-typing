@@ -102,3 +102,15 @@ export interface APIPaymentTransaction {
 	 */
 	_link: string;
 }
+
+export interface APIIncompletePayment {
+	/**
+	 * Whether or not there is an incomplete payment
+	 */
+	exists: boolean;
+
+	/**
+	 * The incomplete payment if there is one
+	 */
+	payment: APIPayment | null;
+}
