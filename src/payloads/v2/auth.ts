@@ -1,7 +1,7 @@
 /**
  * List of available roles
  */
-export type APIUserRoles = 'core_team' | 'email_verified' | 'mega_mod' | 'moderator';
+export type APIUserRoles = 'core_team' | 'email_verified' | 'event_hacker' | 'mega_mod' | 'moderator';
 
 /**
  * List of available scopes
