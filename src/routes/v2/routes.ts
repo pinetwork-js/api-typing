@@ -9,7 +9,14 @@ type _ = undefined;
 export const getAuthenticatedUser = 'v2/me' as Route<api.RESTGetAuthenticatedUserResult>;
 
 // Payments
-export const createPayment = 'v2/payments' as Route<api.RESTPostCreatePaymentResult, api.RESTPostCreatePaymentJSONBody>;
+export const createAppToUserPayment = 'v2/payments' as Route<
+	api.RESTPostCreateAppToUserPaymentResult,
+	api.RESTPostCreateAppToUserPaymentJSONBody
+>;
+export const createUserToAppPayment = 'v2/payments/user_to_app' as Route<
+	api.RESTPostCreateUserToAppPaymentResult,
+	api.RESTPostCreateUserToAppPaymentJSONBody
+>;
 export const getIncompleteClientPayment = 'v2/payments/incomplete' as Route<api.RESTGetClientIncompletePaymentResult>;
 export const getIncompleteServerPayments =
 	'v2/payments/incomplete_server_payments' as Route<api.RESTGetIncompleteServerPaymentsResult>;

@@ -6,14 +6,24 @@ import type { APIIncompleteClientPayment, APIPartialPayment, APIPayment } from '
 export type RESTGetPaymentResult = APIPayment;
 
 /**
- * https://github.com/pi-apps/pi-ruby#create_payment
+ * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
  */
-export type RESTPostCreatePaymentJSONBody = APIPartialPayment;
+export type RESTPostCreateUserToAppPaymentJSONBody = Omit<APIPartialPayment, 'uid'>;
+
+/**
+ * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
+ */
+export type RESTPostCreateUserToAppPaymentResult = APIPayment;
 
 /**
  * https://github.com/pi-apps/pi-ruby#create_payment
  */
-export type RESTPostCreatePaymentResult = APIPayment;
+export type RESTPostCreateAppToUserPaymentJSONBody = APIPartialPayment;
+
+/**
+ * https://github.com/pi-apps/pi-ruby#create_payment
+ */
+export type RESTPostCreateAppToUserPaymentResult = APIPayment;
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#approve-a-payment
