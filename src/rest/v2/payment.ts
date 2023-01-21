@@ -1,4 +1,4 @@
-import type { APIIncompletePayment, APIPartialPayment, APIPayment } from '../../payloads';
+import type { APIIncompleteClientPayment, APIPartialPayment, APIPayment } from '../../payloads';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#get-a-payment
@@ -6,12 +6,12 @@ import type { APIIncompletePayment, APIPartialPayment, APIPayment } from '../../
 export type RESTGetPaymentResult = APIPayment;
 
 /**
- * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
+ * https://github.com/pi-apps/pi-ruby#create_payment
  */
 export type RESTPostCreatePaymentJSONBody = APIPartialPayment;
 
 /**
- * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#create-a-payment
+ * https://github.com/pi-apps/pi-ruby#create_payment
  */
 export type RESTPostCreatePaymentResult = APIPayment;
 
@@ -53,4 +53,19 @@ export type RESTPostCompletePaymentResult = APIPayment;
 /**
  * Undocumented route (GET /payments/incomplete)
  */
-export type RESTGetIncompletePaymentResult = APIIncompletePayment;
+export type RESTGetClientIncompletePaymentResult = APIIncompleteClientPayment;
+
+/**
+ * https://github.com/pi-apps/pi-ruby#get_incomplete_server_payments
+ */
+export type RESTGetIncompleteServerPaymentsResult = APIPayment[];
+
+/**
+ * https://github.com/pi-apps/pi-ruby#cancel_payment
+ */
+export type RESTPostCancelPaymentJSONBody = Record<string, never>;
+
+/**
+ * https://github.com/pi-apps/pi-ruby#cancel_payment
+ */
+export type RESTPostCancelPaymentResult = APIPayment;

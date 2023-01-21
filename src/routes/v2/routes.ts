@@ -10,7 +10,9 @@ export const getAuthenticatedUser = 'v2/me' as Route<api.RESTGetAuthenticatedUse
 
 // Payments
 export const createPayment = 'v2/payments' as Route<api.RESTPostCreatePaymentResult, api.RESTPostCreatePaymentJSONBody>;
-export const getIncompletePayment = 'v2/payments/incomplete' as Route<api.RESTGetIncompletePaymentResult>;
+export const getIncompleteClientPayment = 'v2/payments/incomplete' as Route<api.RESTGetClientIncompletePaymentResult>;
+export const getIncompleteServerPayments =
+	'v2/payments/incomplete_server_payments' as Route<api.RESTGetIncompleteServerPaymentsResult>;
 export const getPayment = routify<api.RESTGetPaymentResult, _, ['paymentId']>`v2/payments/${'paymentId'}`;
 export const approvePayment = routify<
 	api.RESTPostApprovePaymentResult,
@@ -27,6 +29,11 @@ export const completePayment = routify<
 	api.RESTPostCompletePaymentJSONBody,
 	['paymentId']
 >`v2/payments/${'paymentId'}/complete`;
+export const cancelPayment = routify<
+	api.RESTPostCancelPaymentResult,
+	api.RESTPostCancelPaymentJSONBody,
+	['paymentId']
+>`v2/payments/${'paymentId'}/cancel`;
 
 // Usage
 export const trackUsage = 'v2/usage/track' as Route<_, api.RESTPostUsageTrackJSONBody>;

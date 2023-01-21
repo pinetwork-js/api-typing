@@ -1,5 +1,5 @@
 /**
- * https://github.com/pi-apps/pi-platform-docs/blob/master/SDK_reference.md#payments
+ * https://github.com/pi-apps/pi-ruby#create_payment
  */
 export interface APIPartialPayment {
 	/**
@@ -16,12 +16,20 @@ export interface APIPartialPayment {
 	 * An object provided by the developer for their own usage
 	 */
 	metadata: Record<string, unknown>;
+
+	/**
+	 * The user's app-specific ID
+	 */
+	uid: string;
 }
 
+export type APIPaymentDirection = 'app_to_user' | 'user_to_app';
+export type APIPaymentNetwork = 'Pi Network' | 'Pi Testnet';
+
 /**
- * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#paymentdto
+ * https://github.com/pi-apps/pi-ruby#complete_payment
  */
-export interface APIPayment extends APIPartialPayment {
+export interface APIPayment extends Omit<APIPartialPayment, 'uid'> {
 	/**
 	 * The payment identifier
 	 */
@@ -33,14 +41,29 @@ export interface APIPayment extends APIPartialPayment {
 	user_uid: string;
 
 	/**
+	 * The sender address of the blockchain transaction
+	 */
+	from_address: string;
+
+	/**
 	 * The recipient address of the blockchain transaction
 	 */
 	to_address: string;
 
 	/**
+	 * The direction of the payment
+	 */
+	direction: APIPaymentDirection;
+
+	/**
 	 * The payment's creation timestamp
 	 */
 	created_at: string;
+
+	/**
+	 * The network of the payment
+	 */
+	network: APIPaymentNetwork;
 
 	/**
 	 * Status flags representing the current state of this payment
@@ -103,14 +126,26 @@ export interface APIPaymentTransaction {
 	_link: string;
 }
 
-export interface APIIncompletePayment {
-	/**
-	 * Whether or not there is an incomplete payment
-	 */
-	exists: boolean;
+export type APIIncompleteClientPayment =
+	| {
+			/**
+			 * Whether or not there is an incomplete payment
+			 */
+			exists: false;
 
-	/**
-	 * The incomplete payment if there is one
-	 */
-	payment: APIPayment | null;
-}
+			/**
+			 * The incomplete payment if there is one
+			 */
+			payment: null;
+	  }
+	| {
+			/**
+			 * Whether or not there is an incomplete payment
+			 */
+			exists: true;
+
+			/**
+			 * The incomplete payment if there is one
+			 */
+			payment: APIPayment;
+	  };
