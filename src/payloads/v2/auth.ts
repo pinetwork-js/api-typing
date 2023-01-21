@@ -6,7 +6,7 @@ export type APIUserRoles = 'core_team' | 'email_verified' | 'event_hacker' | 'me
 /**
  * List of available scopes
  */
-export type APIUserScopes = 'payments' | 'platform' | 'roles' | 'username';
+export type APIUserScopes = 'payments' | 'platform' | 'roles' | 'username' | 'wallet_address';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#userdto (not updated)
