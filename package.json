@@ -1,7 +1,7 @@
 {
 	"name": "@pinetwork-js/api-typing",
 	"description": "Typing for the Pi Network SDK API",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"main": "build/index.js",
 	"types": "build/index.d.ts",
 	"prettier": "@pinetwork-js/prettier-config",
