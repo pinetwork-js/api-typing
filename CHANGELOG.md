@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.5.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.4.0...v0.5.0) (2023-01-21)
+
+
+### Features
+
+* add App-to-Pioneer API types and endpoints ([f3e2dba](https://www.github.com/PiNetwork-js/api-typing/commit/f3e2dba7d652aae05cdd3adb5a37cc5db2319a24))
+* add event_hacker role ([eb21c9e](https://www.github.com/PiNetwork-js/api-typing/commit/eb21c9e73caec060b2ef1edf590d13007a45da5a))
+* add wallet_address scope ([7db9172](https://www.github.com/PiNetwork-js/api-typing/commit/7db9172999b8dd7dc46279bdd43e9c2f4f443fae))
+
 ## [0.4.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.3.0...v0.4.0) (2022-08-01)
 
 
