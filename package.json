@@ -23,7 +23,7 @@
 		"format:check": "prettier 'src/**/**.{js,ts}' --check"
 	},
 	"author": "Brewal Derouet <brewal_derouet@hotmail.fr>",
-	"license": "MIT",
+	"license": "PiOS",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/PiNetwork-js/api-typing.git"
