@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.1](https://www.github.com/PiNetwork-js/api-typing/compare/v0.5.0...v0.5.1) (2023-01-21)
+
+
+### Bug Fixes
+
+* differentiate payment creation API endpoints ([1ab4fd6](https://www.github.com/PiNetwork-js/api-typing/commit/1ab4fd6f685d5b7a491a8e924bfbb274d13d2897))
+
 ## [0.5.0](https://www.github.com/PiNetwork-js/api-typing/compare/v0.4.0...v0.5.0) (2023-01-21)
 
 
