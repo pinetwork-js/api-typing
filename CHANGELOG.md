@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.5.2](https://www.github.com/PiNetwork-js/api-typing/compare/v0.5.1...v0.5.2) (2023-01-23)
+
+
+### Documentation
+
+* makes README clearer ([33f3fa8](https://www.github.com/PiNetwork-js/api-typing/commit/33f3fa8f38a8b5f664a22d7c5c1ed333193bf93e))
+
 ### [0.5.1](https://www.github.com/PiNetwork-js/api-typing/compare/v0.5.0...v0.5.1) (2023-01-21)
 
 
