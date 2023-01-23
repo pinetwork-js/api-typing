@@ -40,7 +40,7 @@ const routes = require('@pinetwork-js/api-typing/routes')
 ```ts
 // TypeScript or ESM support
 import { routes } from '@pinetwork-js/api-typing';
-// or
+// (or with moduleResolution set to 'node16' or 'nodenext')
 import routes from '@pinetwork-js/api-typing/routes';
 ```
 
@@ -72,7 +72,7 @@ type GetPaymentRoute = typeof getPaymentRoute; // Route<APIPayment, undefined>
 The package provide two generic types to help you for that: `RouteResult` and `RoutePayload`. `RouteResult` get the result's type of a route (the `R` in the type `Route<R, P>`) and `RoutePayload` get the payload's type (the `P`). Here's an example of (non-functional) code to show you how to type your request functions (based on my rewrite of the SDK that you can find [here](https://github.com/PiNetwork-js/sdk)):
 
 ```ts
-import { RoutePayload, RouteResult, Route } from '@pinetwork-js/api-typing/routes';
+import { RoutePayload, RouteResult, Route } from '@pinetwork-js/api-typing';
 
 async function get<T extends Route<any>>(route: T): Promise<RouteResult<T>> {
   const response = await myGetRequest(route);
