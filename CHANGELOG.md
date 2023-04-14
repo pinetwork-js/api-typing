@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/pinetwork-js/api-typing/compare/v0.5.2...v0.6.0) (2023-04-14)
+
+
+### Features
+
+* add preferred_language scope ([0004daa](https://www.github.com/pinetwork-js/api-typing/commit/0004daa14551ff55736b83a1b04cd5c0866308c0))
+
 ### [0.5.2](https://www.github.com/PiNetwork-js/api-typing/compare/v0.5.1...v0.5.2) (2023-01-23)
 
 
