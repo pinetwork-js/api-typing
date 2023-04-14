@@ -1,3 +1,5 @@
+import type { LanguageCode } from '../../utils';
+
 /**
  * List of available roles
  */
@@ -6,7 +8,7 @@ export type APIUserRoles = 'core_team' | 'email_verified' | 'event_hacker' | 'me
 /**
  * List of available scopes
  */
-export type APIUserScopes = 'payments' | 'platform' | 'roles' | 'username' | 'wallet_address';
+export type APIUserScopes = 'payments' | 'platform' | 'preferred_language' | 'roles' | 'username' | 'wallet_address';
 
 /**
  * https://github.com/pi-apps/pi-platform-docs/blob/master/platform_API.md#userdto (not updated)
@@ -31,6 +33,11 @@ export interface APIUser {
 	 * The roles of the user if `roles` scope is specified.
 	 */
 	roles?: APIUserRoles[];
+
+	/**
+	 * The preferred language of the user if `preferred_language` scope is specified.
+	 */
+	preferred_language?: LanguageCode;
 }
 
 /**

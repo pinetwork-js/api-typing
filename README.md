@@ -101,4 +101,4 @@ The export is split into two main parts:
 
   - If a type ends with `Result`, then it represents the expected result by calling its accompanying route.
 
-- Anything else that is miscellaneous will be exported based on what it represents (for example the `routes` part)
+- Anything else that is miscellaneous will be exported based on what it represents (for example the `routes` or `utils` parts)
