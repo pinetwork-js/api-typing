@@ -1,25 +1,24 @@
 import type * as api from '../../rest/v2';
-import type { Route } from '../routify';
 import { routify } from '../routify';
 
 // eslint-disable-next-line @typescript-eslint/naming-convention
 type _ = undefined;
 
 // Authentication
-export const getAuthenticatedUser = 'v2/me' as Route<api.RESTGetAuthenticatedUserResult>;
+export const getAuthenticatedUser = routify<api.RESTGetAuthenticatedUserResult>`v2/me`({});
 
 // Payments
-export const createAppToUserPayment = 'v2/payments' as Route<
+export const createAppToUserPayment = routify<
 	api.RESTPostCreateAppToUserPaymentResult,
 	api.RESTPostCreateAppToUserPaymentJSONBody
->;
-export const createUserToAppPayment = 'v2/payments/user_to_app' as Route<
+>`v2/payments`({});
+export const createUserToAppPayment = routify<
 	api.RESTPostCreateUserToAppPaymentResult,
 	api.RESTPostCreateUserToAppPaymentJSONBody
->;
-export const getIncompleteClientPayment = 'v2/payments/incomplete' as Route<api.RESTGetClientIncompletePaymentResult>;
+>`v2/payments/user_to_app`({});
+export const getIncompleteClientPayment = routify<api.RESTGetClientIncompletePaymentResult>`v2/payments/incomplete`({});
 export const getIncompleteServerPayments =
-	'v2/payments/incomplete_server_payments' as Route<api.RESTGetIncompleteServerPaymentsResult>;
+	routify<api.RESTGetIncompleteServerPaymentsResult>`v2/payments/incomplete_server_payments`({});
 export const getPayment = routify<api.RESTGetPaymentResult, _, ['paymentId']>`v2/payments/${'paymentId'}`;
 export const approvePayment = routify<
 	api.RESTPostApprovePaymentResult,
@@ -43,4 +42,4 @@ export const cancelPayment = routify<
 >`v2/payments/${'paymentId'}/cancel`;
 
 // Usage
-export const trackUsage = 'v2/usage/track' as Route<_, api.RESTPostUsageTrackJSONBody>;
+export const trackUsage = routify<_, api.RESTPostUsageTrackJSONBody>`v2/usage/track`({});
