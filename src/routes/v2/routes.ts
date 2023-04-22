@@ -16,7 +16,7 @@ export const createUserToAppPayment = routify<
 	api.RESTPostCreateUserToAppPaymentResult,
 	api.RESTPostCreateUserToAppPaymentJSONBody
 >`v2/payments/user_to_app`({});
-export const getIncompleteClientPayment = routify<api.RESTGetClientIncompletePaymentResult>`v2/payments/incomplete`({});
+export const getIncompleteClientPayment = routify<api.RESTGetIncompleteClientPaymentResult>`v2/payments/incomplete`({});
 export const getIncompleteServerPayments =
 	routify<api.RESTGetIncompleteServerPaymentsResult>`v2/payments/incomplete_server_payments`({});
 export const getPayment = routify<api.RESTGetPaymentResult, _, ['paymentId']>`v2/payments/${'paymentId'}`;

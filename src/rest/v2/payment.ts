@@ -63,7 +63,7 @@ export type RESTPostCompletePaymentResult = APIPayment;
 /**
  * Undocumented route (GET /payments/incomplete)
  */
-export type RESTGetClientIncompletePaymentResult = APIIncompleteClientPayment;
+export type RESTGetIncompleteClientPaymentResult = APIIncompleteClientPayment;
 
 /**
  * https://github.com/pi-apps/pi-ruby#get_incomplete_server_payments
