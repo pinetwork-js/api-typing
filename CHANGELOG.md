@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.6.1](https://www.github.com/pinetwork-js/api-typing/compare/v0.6.0...v0.6.1) (2023-04-22)
+
+
+### Bug Fixes
+
+* rename RESTGetClientIncompletePaymentResult to RESTGetIncompleteClientPaymentResult ([c80a96e](https://www.github.com/pinetwork-js/api-typing/commit/c80a96e9123e4254f47fef2179678d0ec32d3bd3))
+* route type for static routes ([3ecd123](https://www.github.com/pinetwork-js/api-typing/commit/3ecd123c9da6572409a46586a090caf3da9d6e36))
+
 ## [0.6.0](https://www.github.com/pinetwork-js/api-typing/compare/v0.5.2...v0.6.0) (2023-04-14)
 
 
