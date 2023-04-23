@@ -1,11 +1,11 @@
-export * from './payloads';
-export * as payloads from './payloads';
+export type * from './payloads';
+export type * as payloads from './payloads';
 
-export * from './rest';
-export * as rest from './rest';
+export type * from './rest';
+export type * as rest from './rest';
 
 export * from './routes';
 export * as routes from './routes';
 
-export * from './utils';
-export * as utils from './utils';
+export type * from './utils';
+export type * as utils from './utils';

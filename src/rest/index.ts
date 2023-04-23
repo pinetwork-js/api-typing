@@ -1,2 +1,2 @@
-export * from './v2';
-export * from './error';
+export type * from './v2';
+export type * from './error';
