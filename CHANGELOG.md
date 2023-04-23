@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://www.github.com/pinetwork-js/api-typing/compare/v0.6.1...v0.7.0) (2023-04-23)
+
+
+### Features
+
+* add network error route ([e4cad80](https://www.github.com/pinetwork-js/api-typing/commit/e4cad801b03555c846ec2c805c095e6a6750fb4a))
+
 ### [0.6.1](https://www.github.com/pinetwork-js/api-typing/compare/v0.6.0...v0.6.1) (2023-04-22)
 
 
